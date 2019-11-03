@@ -42,12 +42,12 @@ function buildCharts(sample) {
     var trace1 = {
       x: bubbledata.otu_ids,
       y: bubbledata.sample_values,
-      text: bubbledata.otu_labels,
       mode: 'markers',
       marker: {
         color: bubbledata.sample_values,
         size: bubbledata.sample_values
-      }
+      },
+      text: bubbledata.otu_labels,
     };
 
     var databubble = trace1
